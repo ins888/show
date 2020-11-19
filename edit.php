@@ -25,8 +25,8 @@
           <label for="Username">Comment :</label>
           <input type="text" class="form-control" name = "Comment" id="idComment" placeholder="Comment!!!"; ?> <br>
         <label for="Username">Link :</label>
-          <input type="text" class="form-control" name = "Link" id="idLink" placeholder="Enter Link"; ?>"> <br><br>
-          <input type="submit" id="commentBtn"class="btn btn-outline-warning">
+          <input type="text" class="form-control" name = "Link" id="idLink" placeholder="Enter Link"; ?> <br><br>
+          <input type="submit" id="commentBtn"class="btn btn-outline-success">
     </div>
       </form>
 </body>
