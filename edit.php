@@ -21,7 +21,7 @@
     <h2>Edit Form</h2>
     <form action = "update.php?ID=<?php echo $row['ID']; ?>" method = "post" id="CommentForm">
         <label for="Username">Username :</label>
-          <input type="text" class="form-control" name = "Name" id="idName" value="<?php echo "$row[Name]"; ?>" <br>
+          <input type="text" class="form-control" name = "Name" id="idName" placeholder="Enter Username"; ?>" <br>
           <label for="Username">Comment :</label>
           <input type="text" class="form-control" name = "Comment" id="idComment" value="<?php echo "$row[Comment]"; ?>" <br>
         <label for="Username">Link :</label>
