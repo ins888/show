@@ -20,7 +20,7 @@ $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 ?>
 <br>
 <div class="container">
-    <table class = "table table-bordered table-hover" width="1200" align="center" border="1">
+    <table class = "table table-dark" width="1200" align="center" border="1">
         <thead class="thead-dark">
     <tr>
         <th width="300"> <div align="center">Name</div></th>
@@ -39,7 +39,7 @@ while($Result = mysqli_fetch_array($res))
             <td><?php echo $Result['Comment'];?></td>
             <td><?php echo $Result['Link'];?></td>
             <td>
-                <a href="edit.php?ID=<?php echo $Result['ID']?>" class="btn btn-outline-info" >EDIT</a>
+                <a href="edit.php?ID=<?php echo $Result['ID']?>" class="btn btn-outline-light" >EDIT</a>
                 <a href="del.php?ID=<?php echo $Result['ID']?>" class="btn btn-outline-warning"onclick="return confirm('Confirm data deletion?')">DELETE</a>
                 </tr>
         </tbody>
@@ -47,7 +47,7 @@ while($Result = mysqli_fetch_array($res))
 }
 ?>
     </table>
-    <button type="button" class="btn btn-light" onclick ="window.location.href='form.html'">ADD</button> 
+    <button type="button" class="btn btn-dark" onclick ="window.location.href='form.html'">ADD</button> 
 <?php
 mysqli_close($conn);
 ?>
